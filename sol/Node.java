@@ -78,8 +78,7 @@ public class Node<S> {
      * @param itemToRem - the item to remove the first occurrence of
      * @return boolean indicating whether an item was removed
      */
-    public boolean remove(S itemToRem) {
-        // TODO: discuss (in comment just below) how to finish this method
+    public boolean removeHelper(S itemToRem) {
         if (this.item.equals(itemToRem)) {
             // remove node
             return true;
@@ -88,10 +87,6 @@ public class Node<S> {
         }
         return false;
     }
-
-    /*
-       TODO:  your discussion on how to finish this method goes here
-     */
 
     /**
      * Returns the Node's representation as a String.
